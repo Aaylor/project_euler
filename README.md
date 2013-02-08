@@ -1,6 +1,6 @@
 PROJECT EULER
 =============
 
-Code source used to solved [http://projecteuler.net/problems](Project Eulers') problems.
+Code source used to solved [Project Eulers'](http://projecteuler.net/problems) problems.  
 They will be solves in python, java or c.
 
