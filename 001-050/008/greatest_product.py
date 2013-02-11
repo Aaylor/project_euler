@@ -5,8 +5,8 @@ import time
 def find_greatest_product(liste):
     first_compteur, max_compteur = 0, 4
     result = 0
-    while max_compteur < len(liste):
-        zero = False
+    list_length = len(liste)
+    while max_compteur < list_length:
         if "0" in liste[first_compteur:max_compteur+1]:
             first_compteur += 4
             max_compteur += 4

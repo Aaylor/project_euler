@@ -11,8 +11,7 @@ def find_term():
         count += 1
 
         if len(str(b)) == 1000:
-            break
-    return count
+            return count
 
 if __name__ == "__main__":
     start = time.time()
