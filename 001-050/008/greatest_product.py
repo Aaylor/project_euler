@@ -8,17 +8,16 @@ def find_greatest_product(liste):
     while max_compteur < len(liste):
         zero = False
         if "0" in liste[first_compteur:max_compteur+1]:
-            zero = True
-            first_compteur += 3
-            max_compteur += 3
-        if not zero:
+            first_compteur += 4
+            max_compteur += 4
+        else:
             tmp = 1
             for i in liste[first_compteur:max_compteur+1]:
                 tmp *= int(i)
             if tmp > result:
                 result = tmp
-        first_compteur += 1
-        max_compteur += 1
+            first_compteur += 1
+            max_compteur += 1
     return result
 
 if __name__ == "__main__":
