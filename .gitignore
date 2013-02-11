@@ -24,7 +24,6 @@
 #   Logs & Docs files   #
 #########################
 *.doc
-*.txt
 *.rtf
 
 
