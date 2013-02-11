@@ -4,13 +4,13 @@ import time
 
 def find_prime_number(n_max):
     prime_numbers = [2, 3, 5, 7]
+    found = False
     while len(prime_numbers) != n_max:
         for i in range(2, prime_numbers[-1], 2):
-            found = False
             test = prime_numbers[-1] + i
-            divisor_max = test ** (1/2)
+            div_max = test ** (1/2)
             for j in prime_numbers:
-                if j <= divisor_max:
+                if j <= div_max:
                     if test % j == 0:
                         break
                 else:
@@ -18,6 +18,7 @@ def find_prime_number(n_max):
                     found = True
                     break
             if found:
+                found = False
                 break
     return prime_numbers[-1]
 
