@@ -8,8 +8,9 @@ def find_prime_number(n_max):
         for i in range(2, prime_numbers[-1], 2):
             found = False
             test = prime_numbers[-1] + i
+            divisor_max = test ** (1/2)
             for j in prime_numbers:
-                if j <= (test ** (1/2)):
+                if j <= divisor_max:
                     if test % j == 0:
                         break
                 else:
