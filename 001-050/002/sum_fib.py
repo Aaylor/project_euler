@@ -1,5 +1,7 @@
 #!/dev/bin/python
 
+import time
+
 #   Find the sum of the even-valued terms of Fibonacci sequence for each terms below 4 milions
 def _sum():
     a, b, res = 0, 1, 0
@@ -14,4 +16,6 @@ def _sum():
     return res
 
 if __name__ == "__main__":
+    start = time.time()
     print("Anwser : {0}".format(_sum()))
+    print("Done in {0}s".format(time.time() - start))
